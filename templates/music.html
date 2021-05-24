@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Musics </title>
+    </head>
+    <body>
+        <h1> Musics page  </h1>
+        <div>
+            <table border="1">
+                <thead>
+                    <td>  ID </td>
+                    <td>  Title </td>
+                    <td>  Track Information </td>
+                    <td>  Year </td>
+                    <td>  Format </td>
+                    <td>  Label  </td>
+                    <td>  Resourse Url </td>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="music in MusicCtrl.musics">
+                        <td> {{music.id}} </td>
+                        <td> {{music.title}} </td>
+                        <td> {{music.trackInfo}} </td>
+                        <td> {{music.year}} </td>
+                        <td> {{music.format}} </td>
+                        <td> {{music.label}} </td>
+                        <td> <a href="{{music.resource_url}}"> {{music.resource_url}} </a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>
